@@ -1,7 +1,14 @@
 from statistics import mean
 import numpy as np
 
-def random_predict():
+def random_predict() -> int:
+    """угадывает число
+
+    Returns:
+        int: число попыток
+    """
+
+    
     count = 0
     number = np.random.randint(1, 101)
     while True:
